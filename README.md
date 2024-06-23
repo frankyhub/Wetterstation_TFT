@@ -80,20 +80,14 @@ DHT11 anlöten:
 ![Bild](/png/dht11.png)
 
 
-![Bild](/png/espshield.png)
-
-![Bild](/png/wetter5.JPG)
-
 ---
 
 2. Schritt 3D-Druckteile zeichnen und drucken
 
 + 3D-Druckteile zeichnen und drucken
 + 4 x ESP32-Pins d=5mm h=7mm
-+ 4 x OLED-Display Pins 10x4x1,6mm
 + 1 x DHT11-Halterung 24x8x21 mit DHT11 Aussparung
 
-![Bild](/png/3D.png)
 
 ---
 
@@ -102,7 +96,7 @@ DHT11 anlöten:
 + Wir erstellen mit [BOXES.PY](https://festi.info/boxes.py/) eine Lasercutter Vorlage
 + Wähle die ClosedBox - Fully closed box mit den Maßen x=110, y=90, h=90 und thickness=4
 + Zusätzlich werden runde Öffnungen für den DHT11-Sensor in der Frontseinte,
-+ eine Aussparung für das OLED-Display und
++ eine Aussparung für das TFT-Display und
 + zwei Aussparungen für den Spannungs- und Programmieranschluss des ESP32 in der Seitenwand eingefügt
 
 
@@ -116,17 +110,12 @@ DHT11 anlöten:
 4. Schritt Montage
 
 + Mit Sekundenkleber die 3D-Druck Bauteilfüße auf den ESP32 kleben
-+ Die 3D-Druck Leisten auf das OLED-Display kleben
++ Das TFT-Display auf die Frontseite kleben
 + Die DHT11-Halterung an die Front-Innenseite kleben
-+ VORSICHTIG das Display an die Front-Innenseite kleben
 + Den ESP32 zu den Aussparungen der Seitenwand justieren und auf die Grundplatte kleben
 + Vor dem finalen verkleben des Gehäuses erfolgt ein Funktionstest
 + War der Funktionstest erfolgreich, kann das Gehäuse vollständig verklebt werden
 
-
-![Bild](/png/wetter7.JPG)  
-
-![Bild](/png/wetter8.JPG)  
 
 ![Bild](/png/wetter9.JPG)  
 
@@ -199,7 +188,7 @@ Fertig, Glückwunsch!
 
 ## Setup_User.h
 
-Die User_Setup.h in C:\Users\User\Documents\Arduino\libraries\TFT_eSPI\ kopieren!!!!!
+Die Setup_User.h in C:\Users\User\Documents\Arduino\libraries\TFT_eSPI\ kopieren!!!!!
 
 ```C++
 // TFT 1.77" 1.8" Library
