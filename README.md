@@ -79,7 +79,7 @@ DHT11 anlöten:
 
 ![Bild](/png/dht11.png)
 
-
+![Bild](/png/wetter1.png)
 ---
 
 2. Schritt 3D-Druckteile zeichnen und drucken
