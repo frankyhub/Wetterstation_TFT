@@ -192,6 +192,6 @@ void makeConfigAP() {
 void serverLoop() {
   while (true) {
     delay(1000);
-    Serial.println("Server läuft ...");
+    Serial.println("WLAN-Netzwerk Wetterstation waehlen und 192.168.4.1 im Browser starten ...");
   }
 }
