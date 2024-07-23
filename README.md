@@ -57,6 +57,8 @@ Das benötigen wir für die Wetterstation:
 |   ---      |    ---  |
 
 
+![Bild](/png/tft177_B.png)
+
 
 | ESP32 | 1.8" TFT | 
 | -------- | -------- | 
