@@ -9,7 +9,7 @@
   OpenWeather API 31.10.2022: Wetterstation_AP    b2bc7fc61c4cc3545e6bbf151b58e1dd
 
 **************************************************************************************************
-  Version: 13.07.2024
+  Version: 28.07.2024
 **************************************************************************************************
   Board: ESP32vn IoT UNO V1.0.4 /1.0.6
 
@@ -579,8 +579,7 @@ void loop() {
       tft.print (weekDay);
       tft.setCursor (0, 52);
       tft.print(monthDay); tft.print(". "); tft.print (currentMonthName); tft.print(" "); tft.print (currentYear);
-      ;
-
+     
 
       tft.setCursor (25, 88); //20 , 88
       tft.setTextColor(0xFBE0, TFT_BLACK);
@@ -604,28 +603,8 @@ void loop() {
       delay(4000);
 
 
+
       //---------- Seite 2 ----------------------------
-
-      tft.fillScreen(TFT_BLACK);
-      tft.setTextColor(TFT_WHITE, TFT_BLACK); //weiss
-      tft.drawString("Raumklima", 22, 26);
-      //  tft.drawString("Tegernsee", 22, 26);
-
-
-      tft.drawString("Temp :", 0, 52);
-      tft.setCursor (76, 52);
-      tft.print (temperature); tft.print ("\xF7""C");
-
-
-      tft.drawString("Luftf: ", 0, 78);
-      tft.setCursor (76, 78);
-      tft.print (humidity); tft.print ("%");
-
-      delay(4000);
-
-
-
-      //---------- Seite 3 ----------------------------
       tft.fillScreen(TFT_BLACK);
       tft.setTextColor(TFT_WHITE, TFT_BLACK); //weiss
       tft.drawString("Wetterdaten", 12, 0);
@@ -645,8 +624,56 @@ void loop() {
       tft.setCursor (65, 104);
       tft.print (myObject["wind"]["speed"]); tft.print ("m/s");
 
+      delay(4000);
+      
       //*******************************************
 
+      //--------- Seite 3 -----------------------------
+  
+      tft.fillScreen(TFT_BLACK);
+      tft.setTextColor(TFT_WHITE, TFT_BLACK); //weiss
+      tft.drawString("Wetterdaten", 12, 0);
+      tft.drawString("Tegernsee", 22, 26);
+
+      tft.drawString("Feuchte: ", 0, 52);
+      tft.setCursor (95, 52);
+      tft.print (myObject["main"]["humidity"]);
+      tft.print ("%");
+      
+      tft.drawString("Wolken: ", 0, 78);
+      tft.setCursor (95, 78);
+      tft.print (myObject["clouds"]["all"]);
+      tft.print ("%");    
+
+
+      tft.drawString("minTemp: ", 0, 104);
+      tft.setCursor (95, 104);
+      tft.print (mintemp - 273.15, 1);
+      tft.print ("\xF7");
+ //     tft.print ("\xF7""C");    
+           
+      delay(4000);
+
+      //---------- Seite 4 ----------------------------
+
+      tft.fillScreen(TFT_BLACK);
+      tft.setTextColor(TFT_WHITE, TFT_BLACK); //weiss
+      tft.drawString("Raumklima", 22, 16);
+      //  tft.drawString("Tegernsee", 22, 26);
+
+
+      tft.drawString("Temp :", 0, 52);
+      tft.setCursor (76, 52);
+      tft.print (temperature-5,1); tft.print ("\xF7""C");
+
+
+      tft.drawString("Luftf: ", 0, 78);
+      tft.setCursor (76, 78);
+      tft.print (humidity,1); tft.print ("%");
+
+ //     delay(4000);      
+      //*******************************************
+      
     }
     else {
       Serial.println("WiFi Disconnected");
