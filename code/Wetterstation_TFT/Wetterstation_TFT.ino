@@ -4,12 +4,10 @@
   Funktion: ESP32 Wetterstation mit WLAN-Manager - Wetterdaten Tegernsee und Raumklima DHT11 TFT 1.77"
             Gas-Sensor MQ135, Buzzer und Gas LED-Ampel
             Automatische So/Wi-Zeit Umstelung
-
-
   OpenWeather API 31.10.2022: Wetterstation_AP    b2bc7fc61c4cc3545e6bbf151b58e1dd
 
 **************************************************************************************************
-  Version: 28.07.2024
+  Version: 11.09.2024
 **************************************************************************************************
   Board: ESP32vn IoT UNO V1.0.4 /1.0.6
 
@@ -242,7 +240,7 @@ NTPClient timeClient(ntpUDP, "de.pool.ntp.org");
 String weekDays[7] = {"Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"};
 
 //Month names
-String months[12] = {"Jan.", "Feb.", "M""\xE4""rz", "April", "Mai", "Juni", "Juli", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."};
+String months[12] = {"Jan.", "Feb.", "M""\xE4""rz", "Apr.", "Mai", "Juni", "Juli", "Aug.", "Sep.", "Okt.", "Nov.", "Dez."};
 //-----------------------------------------------
 
 
@@ -312,7 +310,7 @@ void setup() {
         tft.setTextColor(TFT_BLUE, TFT_BLACK); 
   tft.drawString("Ich lade ", 30, 5);
   tft.drawString("die Daten", 30, 106);
-    delay(1000);
+    delay(500);
 //***********************************************;
 
 
@@ -575,7 +573,7 @@ void loop() {
 
 
       // tft.drawString("Temp :", 0, 52);
-      tft.setCursor (42, 26);
+      tft.setCursor (22, 26);
       tft.print (weekDay);
       tft.setCursor (0, 52);
       tft.print(monthDay); tft.print(". "); tft.print (currentMonthName); tft.print(" "); tft.print (currentYear);
@@ -671,7 +669,7 @@ void loop() {
       tft.setCursor (76, 78);
       tft.print (humidity,1); tft.print ("%");
 
- //     delay(4000);      
+ //     delay(3000);      
       //*******************************************
       
     }
