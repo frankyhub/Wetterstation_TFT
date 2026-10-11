@@ -19,7 +19,7 @@ Diese Anleitung beschreibt den Aufbau einer Wetterstation in einem Holzgehäuse 
 Die Wetterstation zeigt beim Start für 5 Sekunden einen Smiley. In dieser Zeit werden die aktuelle Uhrzeit, das Datum und die aktuellen Wetterdaten aus der Region Tegernsee von de.pool.ntp.org und von openweathermap.org geladen.
 Sind die Daten geladen, verschwindet der Smiley und es werden in regelmäßigen Abständen drei Seiten mit Datum und Uhrzeit, danach das Raumklima mit Temperatur und Luftfeuchte, zuletzt die Wetterdaten Außen-Temperatur, Windgeschwindigkeit und Luftdruck angezeigt.
 
-<img src="pic/Wetterstation.png" width="500"> 
+<img src="png/Wetterstation.png" width="500"> 
 <br> <br> 
 
 ## Hardware:
@@ -68,7 +68,7 @@ Das benötigen wir für die Wetterstation:
 |   ---      |    ---  |
 
 
-<img src="pic/tft177_B.png" width="500"> 
+<img src="png/tft177_B.png" width="500"> 
 <br> <br> 
 
 
@@ -88,16 +88,16 @@ Das benötigen wir für die Wetterstation:
 
 Stiftleisten einlöten:
 
-<img src="pic/espshield2.png" width="500"> 
+<img src="png/espshield2.png" width="500"> 
 <br> <br>  
 
 DHT11 anlöten:
 
-<img src="pic/dht11.png" width="500"> 
+<img src="png/dht11.png" width="500"> 
 <br> <br> 
 
 
-<img src="pic/wetter1.png" width="500"> 
+<img src="png/wetter1.png" width="500"> 
 <br> <br> 
 
 ---
@@ -120,7 +120,7 @@ DHT11 anlöten:
 + zwei Aussparungen für den Spannungs- und Programmieranschluss des ESP32 in der Seitenwand eingefügt
 
 
-<img src="pic/lasercutter.jpg" width="500"> 
+<img src="png/lasercutter.jpg" width="500"> 
 <br> <br>
 
 
@@ -138,12 +138,12 @@ DHT11 anlöten:
 + War der Funktionstest erfolgreich, kann das Gehäuse vollständig verklebt werden
 
 
-<img src="pic/wetter9.JPG" width="500"> 
+<img src="png/wetter9.JPG" width="500"> 
 <br> <br>
 
 Erster Funktionstest am Seriellen Monitor:
 
-<img src="pic/wetter10.png" width="500"> 
+<img src="png/wetter10.png" width="500"> 
 <br> <br>
 
 ---
@@ -162,27 +162,27 @@ Erster Funktionstest am Seriellen Monitor:
 
 Aufruf "Wetterstation" in den WLAN-Einstellungen
 
-<img src="pic/ws_ap_einstellung.png" width="500"> 
+<img src="png/ws_ap_einstellung.png" width="500"> 
 <br> <br>
 
 Im Browser die IP-Adresse 192.168.4.1 öffnen, die WLAN Zugangsdaten eingeben und speichern
 
-<img src="pic/ws_wlaneinstellung2.png" width="500"> 
+<img src="png/ws_wlaneinstellung2.png" width="500"> 
 <br> <br>
 
 
 Sind die WLAN-Zugangsdaten korrekt, startet die Wetterstation
 
-<img src="pic/ws_wlaneinstellung3.png" width="500"> 
+<img src="png/ws_wlaneinstellung3.png" width="500"> 
 <br> <br>
 
 Startet die Wetterstation nicht, muss der Vorgang wiederholt werden.
 Kontrolle am Seriellen Monitor:
 
-<img src="pic/wetter11.png" width="500"> 
+<img src="png/wetter11.png" width="500"> 
 <br> <br>
 
-<img src="picwetter12.png" width="500"> 
+<img src="png/wetter12.png" width="500"> 
 <br> <br>
 
 Fertig, Glückwunsch!
