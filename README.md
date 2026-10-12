@@ -5,22 +5,22 @@
 |[:skull:ISSUE](https://github.com/frankyhub/Wetterstation_TFT/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/Wetterstation_TFT/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/Wetterstation_TFT/wiki)||
 |--|--|--|--|
 | | | | |
-<a href="https://github.com/frankyhub/Wetterstation_TFT/issues">![GitHub issues](https://img.shields.io/github/issues/frankyhub/Wetterstation_TFT)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/Wetterstation_TFT)|<a href="https://github.com/frankyhub/Wetterstation_TFT/discussions">![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/Wetterstation_TFT)|<a href="https://github.com/frankyhub/Wetterstation_TFT/6eleases">![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/Wetterstation_TFT)|![Static Badge](https://img.shields.io/badge/RepoNr.:-%2066-blue)|
+<a href="https://github.com/frankyhub/Wetterstation_TFT/issues">![GitHub issues](https://img.shields.io/github/issues/frankyhub/Wetterstation_TFT)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/Wetterstation_TFT)|<a href="https://github.com/frankyhub/Wetterstation_TFT/discussions">![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/Wetterstation_TFT)|<a href="https://github.com/frankyhub/Wetterstation_TFT/6eleases">![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/Wetterstation_TFT)|![Static Badge](https://img.shields.io/badge/RepoNr.:-%20069-blue)|
 |![GitHub Created At](https://img.shields.io/github/created-at/frankyhub/Wetterstation_TFT)| <a href="https://github.com/frankyhub/Wetterstation_TFT/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/Wetterstation_TFT/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)||
+
+
+<img src="png/Wetterstation.png" width="500"> 
+<br> <br> 
 
 </div>
 
-# Wetterstation_TFT
-ESP32 Wetterstation mit WLAN-Manager - Wetterdaten Tegernsee und Raumklima, 1.77" TFT Display
 
 
-## Story:
+## Story
 Diese Anleitung beschreibt den Aufbau einer Wetterstation in einem Holzgehäuse mit einem ESP32. Beim ESP32 ist ein DHT11-Sensor und einem TFT Display 1.77" angeschlossen. Die Wetterstation beinhaltet einen WiFi-Manager für die Einstellung der WLAN-Zugangsdaten (SSID und Passwort). Nach den ersten Start der Wetterstation, muss in den WLAN-Einstellungen des Handy oder Tablet das Netzwerk "Wetterstation" ausgewählt und über einen Browser die IP-Adresse 192.168.4.1 aufgerufen werden. Danach startet die "Wetterstation WLAN-Einstellung" und die Zugangsdaten für das WLAN können eingetragen werden. Sind die Zugangsdaten korrekt, startet die Wetterstation.
 Die Wetterstation zeigt beim Start für 5 Sekunden einen Smiley. In dieser Zeit werden die aktuelle Uhrzeit, das Datum und die aktuellen Wetterdaten aus der Region Tegernsee von de.pool.ntp.org und von openweathermap.org geladen.
 Sind die Daten geladen, verschwindet der Smiley und es werden in regelmäßigen Abständen drei Seiten mit Datum und Uhrzeit, danach das Raumklima mit Temperatur und Luftfeuchte, zuletzt die Wetterdaten Außen-Temperatur, Windgeschwindigkeit und Luftdruck angezeigt.
 
-<img src="png/Wetterstation.png" width="500"> 
-<br> <br> 
 
 ## Hardware:
 Das benötigen wir für die Wetterstation:
